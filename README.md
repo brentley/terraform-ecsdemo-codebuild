@@ -1,6 +1,6 @@
 Setting up infrastructure:
 
-1. aws s3 mb --region us-east-2 s3://containerdemo-frontend-dockerhub-tf-state-bucket
+1. aws s3 mb --region us-east-2 s3://${accountnumber}-ecsdemo-dockerhub-tf-state
 1. go to https://console.aws.amazon.com/codebuild/home?region=us-east-2#/projects/create (assuming region is us-east-2)
 and click "connect to github" -- If necessary authenticate to github allowing codebuild access to your github repos.
 (there is apparently no other way to make this happen, according to the codebuild docs). You don't need to do anything further,
